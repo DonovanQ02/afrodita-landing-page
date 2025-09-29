@@ -1,3 +1,8 @@
+@media (min-width: 769px) {
+  .mt-custom-negative {
+    margin-top: -6%;
+  }
+}
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -104,6 +109,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
+
+  
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw); }
@@ -527,6 +534,8 @@ progress {
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px; } }
+
+
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
