@@ -7,9 +7,9 @@
   <meta name="description"
     content="Afrodita, distribuidora mayorista de materiales, herramientas y productos profesionales para uñas. Todo para tu salón o negocio de uñas en un solo lugar.">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/custom/favicon2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/custom/favicon2.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/custom/favicon2.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <meta name="author" content="Holger Koenemann">
@@ -63,6 +63,54 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/524461238782?text=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20sus%20productos,%20existencias%20o%20cursos" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp Afrodita">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      transition: box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .whatsapp-float i {
+      color: #fff;
+      font-size: 2.2rem;
+      display: block;
+    }
+    .whatsapp-float:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+      background: #1ebe57;
+      color: #fff;
+    }
+    @media (max-width: 575.98px) {
+      .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        font-size: 1.6rem;
+        right: 12px;
+        bottom: 12px;
+        border-radius: 12px;
+      }
+      .whatsapp-float i {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 
   <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
     <style>
@@ -519,6 +567,12 @@
     <!-- REEMPLAZA TU BLOQUE ANTERIOR POR ESTE -->
 <div class="py-vh-4 bg-white w-100 overflow-hidden" id="cursos">
   <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+  <h2 class="display-5 fw-bold mb-2" style="color:rgba(172,98,27,1);">Conoce sobre los cursos con los que contamos</h2>
+        <p class="lead text-muted">Descubre nuestras opciones de formación profesional en uñas y pestañas. Elige el curso que mejor se adapte a tus necesidades y lleva tu talento al siguiente nivel.</p>
+      </div>
+    </div>
     <!-- Contenedores vacíos que llenaremos con JS -->
     <div id="cursos-desktop"></div>
     <div id="cursos-mobile"></div>
@@ -703,7 +757,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <!-- WhatsApp -->
           <div class="socials-cards__item">
             <a class="socials-cards__card"
-              href="https://wa.me/524461238782?text=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20sus%20productos%20existencias%20o%20cursos"
+              href="https://wa.me/524461238782?text=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20sus%20productos,%20existencias%20o%20cursos"
               target="_blank">
               <i class="bi bi-whatsapp"></i>
             </a>
